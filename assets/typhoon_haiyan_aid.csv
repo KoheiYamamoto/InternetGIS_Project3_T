@@ -1,0 +1,56 @@
+donor,id,organization,total_amount,group,type
+United Kingdom,1,United Kingdom,92010805,high,country
+United States,2,United States,61454035,high,country
+Australia,3,Australia,38690876,high,country
+Japan,4,Japan,31205418,high,country
+Norway,5,Norway,24180078,high,country
+Canada,6,Canada,19107174,high,country
+Sweden,7,Sweden,16295753,high,country
+Germany,8,Germany,15987312,high,country
+United Arab Emirates,9,United Arab Emirates,10622870,high,country
+Netherlands,10,Netherlands,10048209,high,country
+Saudi Arabia,11,Saudi Arabia,10000000,high,country
+Denmark,12,Denmark,7280426,medium,country
+Finland,13,Finland,5064298,medium,country
+Switzerland,14,Switzerland,3682645,medium,country
+Spain,15,Spain,3630851,medium,country
+New Zealand,16,New Zealand,3294325,medium,country
+Italy,17,Italy,3134696,medium,country
+"Korea, Republic of",18,"Korea, Republic of",3000000,medium,country
+Belgium,19,Belgium,2038705,medium,country
+Indonesia,20,Indonesia,2000000,medium,country
+Austria,21,Austria,1859504,medium,country
+China,22,China,1800000,medium,country
+France,23,France,1609100,medium,country
+Luxembourg,24,Luxembourg,1396308,medium,country
+Russian Federation,25,Russian Federation,1170000,medium,country
+Others,26,Others,1104051,medium,country
+Malaysia,27,Malaysia,1000000,medium,country
+Mexico,28,Mexico,1000000,medium,country
+Ireland,29,Ireland,688705,low,country
+Estonia,30,Estonia,628875,low,country
+Ecuador,31,Ecuador,500000,low,country
+Turkey,32,Turkey,434053,low,country
+South Africa,33,South Africa,400000,low,country
+Thailand,34,Thailand,330000,low,country
+Singapore,35,Singapore,292103,low,country
+Czech Republic,36,Czech Republic,213904,low,country
+Hungary,37,Hungary,140643,low,country
+Monaco,38,Monaco,135870,low,country
+Croatia,39,Croatia,68691,low,country
+Central Emergency Response Fund (CERF),40,Central Emergency Response Fund (CERF),25284320,high,organisation
+European Commission,41,European Commission,13675618,high,organisation
+Disasters Emergency Committee (UK),42,Disasters Emergency Committee (UK),8047477,high,organisation
+Allocation of unearmarked funds by UN agencies,43,Allocation of unearmarked funds by UN agencies,6000000,high,organisation
+Asian Development Bank,44,Asian Development Bank,3000000,high,organisation
+Accenture,45,Accenture,1600000,high,organisation
+Bill and Melinda Gates Foundation,46,Bill and Melinda Gates Foundation,800000,medium,organisation
+IFRC Disaster Relief Emergency Fund,47,IFRC Disaster Relief Emergency Fund,530686,medium,organisation
+OPEC Fund for International Development,48,OPEC Fund for International Development,406176,medium,organisation
+Ford Foundation,49,Ford Foundation,300000,medium,organisation
+Roddick Foundation,50,Roddick Foundation,160772,medium,organisation
+Holy See,51,Holy See,150000,medium,organisation
+Arab Gulf Programme for UN Development Organizations,52,Arab Gulf Programme for UN Development Organizations,100000,medium,organisation
+New Zealand Red Cross,53,New Zealand Red Cross,82508,low,organisation
+Deutsche Telekom,54,Deutsche Telekom,68871,low,organisation
+Private (individuals & organisations),55,Private (individuals & organisations),100384128,high,organisation

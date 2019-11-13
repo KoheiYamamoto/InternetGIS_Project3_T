@@ -1,0 +1,8 @@
+.absolute_pos {
+    position:  absolute;        /* 要素の配置方法を指定 */
+    background-color: #ccc;     /* 背景色指定 */
+    padding:  20px;             /* 余白指定 */
+    left:  30px;                /* 左からの位置指定 */
+    top: 20px;  
+    z-index:10                /* 上からの位置指定 */
+}

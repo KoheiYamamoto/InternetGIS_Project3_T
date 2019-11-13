@@ -1,0 +1,219 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The Environmentalist</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/tracks.css" rel="stylesheet" type="text/css" media="all" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bubble_chart.css">
+
+</head>
+<body>
+
+	<div class="main-container">
+		<section class="page-title page-title-3 bg-secondary">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-center">
+						<h3 class="uppercase mb0">The Environmentalist</h3>
+					</div>
+				</div>
+			</div>
+
+			<ol class="breadcrumb breadcrumb-2">
+				<li>
+					<a href="index.html">Home</a>
+				</li>
+				<li>
+					<a href="climatechange.html">Climate Change</a>
+				</li>
+				<li>
+					<a href="haiyan.html">Haiyan</a>
+				</li>
+			</ol>
+		</section><section class="image-bg overlay parallax pt180 pb180 pt-xs-80 pb-xs-80">
+			<div class="background-image-holder">
+				<img alt="image" class="background-image" src="img/haiyan.jpg">
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
+						<h2>The Perfect Storm&nbsp;</h2>
+						<p class="lead mb48 mb-xs-32">Typhoon Haiyan was one of the strongest tropical storms ever recorded, and the deadliest to hit the Philippines.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <!-- Trajectory of Haiyan -->
+        <div id="control2">
+              <h2 class="mb40 mb-xs-20">Typhoon Haiyan</h2>
+              <p class="lead mb60">In November 2013, a tropical storm began developing in the Pacific Ocean southwest of the Philippines. This developed into a super-typhoon, known locally as Typhoon Yolanda and internationally as Typhoon Haiyan. It was one of the strongest tropical storms ever recorded, and the deadliest to hit the Philippines. It was responsible for over 6300 deaths.
+
+              The Philippines is a group of over 7000 islands in southern Asia, located between the Tropic of Cancer and the equator. It is the 7th most populous nation in Asia, with a population of 98.4 million throughout the islands. Population density is distributed unevenly across the islands, and is greatest in the cities (such as Tacloban City). The Philippines is a less economically developed country (LEDC), with an average gross domestic product per capita of $2765. This directly influences how prepared the area can be for hazards.
+
+
+              By 7 November, Haiyan was labelled as a Category 5 storm, with estimated wind speeds up to 314km/h. This ‘super-typhoon’ made landfall in the Philippines, and then five other areas, including southern China and Vietnam. However, the Philippines was the worst affected. The storm gradually weakened as it moved north, until by 11 November it had disappeared. </p>
+        </div>
+        <!-- </div> -->
+
+		<div class="wrapper">
+	        <div id="map">
+              <div>
+                  <button id="start"><strong>Start Time Animation</strong></button>
+                  <script src="https://d3js.org/d3.v4.min.js"></script>
+                  <script src="https://d3js.org/topojson.v1.min.js"></script>
+                  <script src="https://d3js.org/colorbrewer.v1.min.js"></script>
+                  <script src="https://d3js.org/d3-queue.v2.min.js"></script>
+                  <script src="js/d3-legend.min.js"></script>
+                  <script src="js/d3-tip.js"></script>
+                  <script src="js/tracks.js"></script>
+		      </div>
+            </div>
+		    <div id="control">
+              <h6 class="uppercase mb30">Start time animation</h6>
+              <p class="lead mb60"> Click on the button to play the animation. This map zooms in on the central Philippines districts where the storm pushed through. The numbers indicate the size of the storm, which peaked just as it hit the central Philippines. </p>
+              <h6 class="uppercase mb30">Hover across provinces</h6>
+              <p class="lead mb60"> Hover over the provinces to see their names. Provinces are color-coded according to population density. Manila, the country's capital and its most populous city, was out of the storm's range. But many other cities were not, including Tacloban, in Leyte province</p>
+            </div>
+		</div> 
+
+
+        <!-- Types of Vistims, Typhoons, and Disasters by Comparison -->
+		<div class="main-container">
+			<section class="image-edge pt120 pb120 pt-xs-40 pb-xs-40">
+				<div class="col-md-6 col-sm-4 p0 col-md-push-6 col-sm-push-8">
+					<div id="chart"></div>
+				</div>
+				<div class="container">
+					<div class="col-md-5 col-md-pull-0 col-sm-7 col-sm-pull-4 v-align-transform">
+						<h2 id='title' class="mb40 mb-xs-16">Types of Victims, Typhoons, and Disasters by Comparison</h2>
+						<p class="lead mb40">
+						</p>
+						<div class="feature boxed">
+	                        <button onclick="update1('var')">Victims</button> 
+                            <button onclick="update2('var')">Typhoons</button>
+                            <button onclick="update3('var')">Disasters</button>
+                            <!-- <input type="image" onclick="update1('var')" src="img/victim.png" alt="victim">
+	                        <input type="image" onclick="update2('var')" src="img/typhoon.png" alt="typhoon">
+                            <input type="image" onclick="update3('var')" src="img/victim.png" alt="victim"> -->
+	                        <div class="spread-children">
+	                        </div>
+                	    </div>
+                	</div>
+
+                </div>
+                <div class="row mb32 mb-xs-16">
+        				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        					<p class="lead">One of the worst impacts of a tropical storm is a storm surge, when the sea level rises unusually high because of winds and low air pressure. A 7.5m wave reached the coast, and a 5m surge hit Tacloban City. Here at least 5800 people were killed. Tacloban City was by far the worst-hit area. Around 90% of all buildings were destroyed, trees were uprooted or flattened, debris covered the land, electricity supplies were cut and infrastructure and communications destroyed. Some 5 million people saw their homes destroyed or become uninhabitable, and the airport was unusable. Of the total 6340 fatalities (estimated), almost all were in Tacloban. </p>
+    					</div>
+    				</div>        	    
+            </section>
+        </div>	
+        
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/scripts.js"></script>
+
+	
+        <!-- Types of Humanitarian Response to Typhoon Haiyan -->
+        <section>
+        	 <!-- <div class="container"> -->
+        		<div class="main-container">
+        		<div class="feed-item mb96 mb-xs-48">
+        			<div class="row mb16 mb-xs-0">
+        				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+        					<h2>Humanitarian Responses to Typhoon Haiyan</h2>
+        				</div>
+        			</div>
+        			<div class="row mb32 mb-xs-16">
+        				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        					<center>
+        						<img alt="Article Image" class="mb32 mb-xs-16" src="img/Aid.jpg">
+        					</center>
+        					<p class="lead">Emergency response was coordinated by the World Health Organisation and the United Nations, including the UNOCHA (Office for Coordination of Humanitarian Affairs), and other non-governmental organisations (NGOs) such as the Red Cross and the DEC (Disasters Emergency Committee). The DEC launched an international fundraising appeal on 12 November via television, radio, internet and social media - particularly Twitter. 
+        						<br>
+        						<br>The destruction of infrastructure, particularly the airports, slowed relief efforts as much aid remained halted on entry to the country and could not be distributed to where it was needed. The UN fundraising appeal total US$791 million in aid. A total of US$538,090,839 have been contributed/ committed by various countries and organisations. 
+        						<br>
+        						<br>Following the storm, technology was important. Infrared satellite images were used to locate areas of devastation, and thermal cameras helped to detect bodies buried under the debris. The Humanitarian Open StreetMap Team used crowd-sourced information to keep the global community updated, Google Person Finder enabled people to track friends and family, and social media assisted the relief operations. These all aided search and rescue efforts on the ground.&nbsp;&nbsp;<br> </p>
+    					</div>
+    				</div>
+    				<div class="row">
+    					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+    						<hr>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+	
+
+
+    	<section>
+    		<div class="container">
+    				<h2>Typhoon Haiyan Aid</h2>
+    				<div id="toolbar">
+    					<a id="all" class="button active">All Aid</a>
+    					<a id="year" class="button">Type of Aid</a>
+    				</div>
+    				<div id="vis"></div>
+
+    				<div class="footer">
+    				</div>
+    			</div>
+    		<!-- </div> -->
+			<script src="//d3js.org/d3.v4.min.js"></script>
+			<script src="js/tooltip.js"></script>
+			<script src="js/bubble_chart.js"></script>
+    	</section>
+
+
+
+    	<!-- Types of Humanitarian Response to Typhoon Haiyan -->
+        <section>
+        	<!-- <div class="container"> -->
+        	<div class="main-container">
+        		<div class="feed-item mb96 mb-xs-48">
+        			<div class="row mb16 mb-xs-0">
+        				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+        					<h2>What's Next?</h2>
+        				</div>
+        			</div>
+        			<div class="row mb32 mb-xs-16">
+        				<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+        					<center>
+        						<img alt="Article Image" class="mb32 mb-xs-16" src="img/whatnext.jpg">
+        					</center>
+        					<p class="lead">Effects are being made to improve satellite and computer monitoring to improve prediction in future. Some soft engineering scheme like creating mangrove plantation or tree plantations are being introduced to reduce the impact of waves and to provide windbreaks. The government has also worked to improve warning systems and emergency plans for next time, and the internet is being used more to inform people. 
+        						<br>
+        						<br>The impacts of the storm were so devastating, and the death toll so high, the names ‘Yolanda’ and ‘Haiyan’ have been retired from the official typhoon name lists and will never be used again. The Philippines, and Asia as a whole, need to pay careful attention to climate change involving changing weather patterns, and to the future risks of increased storm frequency.
+        						<br>
+        						</p>
+    					</div>
+    				</div>
+    				<div class="row">
+    					<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
+    						<hr>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</section>
+
+        		
+    	<script src="https://d3js.org/d3.v4.js"></script>
+    	<script src="js/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	<script src="js/parallax.js"></script>
+    	<script src="js/scripts.js"></script>
+    	<script src="js/comparison.js"></script>
+    </body>
+</html>
