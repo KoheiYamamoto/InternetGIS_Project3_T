@@ -34,7 +34,7 @@
 			display: none;
 		}
 		.node-icon--faded {
-			opacity: 0.5;
+			opacity: 0.2;
 		}
 		.legend-size circle {
 			fill: rgb(31, 119, 180);

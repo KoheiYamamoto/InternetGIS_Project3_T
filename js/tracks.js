@@ -116,9 +116,9 @@ d3.json("assets/province2.json", function(error, world) {
     var dateText = svg1.append("text") //inserted this variable
         .attr("id", "dataTitle")
         .text("2013/11/"+track[0].day + " " + track[0].hour + ":00 class: " + track[0].class+ " wind: " + track[0].wind+ "kt pressure: " + track[0].pressure+"hPa")
-        .attr("x", 70)
-        .attr("y", 20)
-        .attr("font-family", "sans-serif")
+        .attr("x", 20)
+        .attr("y", 100)
+        .attr("font-family", "avenir next, sans-serif")
         .attr("font-size", "20px")
         .attr("fill", color_scale(track[0].class));
 

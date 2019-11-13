@@ -162,8 +162,8 @@ let svg = d3.select('svg');
 		let infoBox = node.append('foreignObject')
 			.classed('circle-overlay hidden', true)
 			.attr('x', -350 * 0.5 * 0.8)
-			.attr('y', -350 * 0.5 * 0.8)
-			.attr('height', 350 * 0.8)
+			.attr('y', -250 * 0.5 * 0.8)
+			.attr('height', 200 * 0.8)
 			.attr('width', 350 * 0.8)
 				.append('xhtml:div')
 				.classed('circle-overlay__inner', true);
